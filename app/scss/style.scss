@@ -3,10 +3,142 @@
 @import "reset";
 @import "global";
 
-.test{
-  width: 200px;
-  height: 200px;
-  background-color: #ccc;
+.header {
+  padding: 48px 0 45px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  position: relative;
+
+  &__link {
+    font-size: 36px;
+    line-height: 58px;
+    color: $main;
+    text-decoration: none;
+    @extend %rubik-500
+  }
+
+  &__link::before {
+    content: url(../images/logo_icon.svg);
+    margin-right: 13px;
+
+  }
+}
+
+.menu {
+  &__lists {
+    display: flex;
+  }
+
+  &__list + .menu__list {
+    margin-left: 35px;
+  }
+
+  &__link {
+    font-size: 15px;
+    line-height: 12px;
+    color: $main;
+    text-decoration: none;
+    @extend %rubik-500
+  }
+
+}
+
+.plus::after {
+  content: '+';
+  margin-left: 5px;
+
+}
+
+.user-nav {
+  display: flex;
+  align-self: flex-end;
+
+  &__item-search {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #edf1f4;
+    margin-right: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 130px;
+    height: 50px;
+    background-color: #fcd7b6;
+    position: relative;
+    margin-right: 45px;
+  }
+
+  &__group::before,
+  &__group::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fcd7b6;
+    z-index: -1;
+  }
+
+  &__group::before {
+    left: -25px;
+  }
+
+  &__group::after {
+    right: -25px;
+  }
+
+  &__link {
+    position: relative;
+
+  }
+
+  &__num {
+    position: absolute;
+    font-size: 10px;
+    line-height: 19px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    top: -8px;
+    right: -8px;
+    background-color: #fff;
+    border-radius: 50%;
+    @extend %dmSans-400
+  }
+
+  &__decoration {
+    height: 33px;
+    width: 1px;
+    border-right: 1px solid #fde7d3;
+  }
+
+  &__btn {
+    width: 50px;
+    height: 50px;
+    background-color: #a3bbc8;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__btn-img {
+    margin: 0 auto;
+  }
+
 }
 
 
