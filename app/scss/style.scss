@@ -109,7 +109,7 @@
   &__num {
     position: absolute;
     font-size: 10px;
-    line-height: 19px;
+    line-height: 18px;
     width: 16px;
     height: 16px;
     text-align: center;
@@ -117,7 +117,7 @@
     right: -8px;
     background-color: #fff;
     border-radius: 50%;
-    @extend %dmSans-400
+    @extend %dmsans-400
   }
 
   &__decoration {
@@ -138,7 +138,111 @@
   &__btn-img {
     margin: 0 auto;
   }
+}
 
+.footer {
+  &__top {
+    padding: 75px 0 60px;
+    border-bottom: 1px solid #dae4e9;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__item {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  &__item-title {
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: $footer-title;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+  }
+
+  &__item-content {
+    @extend %rubik-400;
+    margin-bottom: 10px;
+  }
+
+  &__item-link {
+    color: $subtext;
+    text-decoration: none;
+  }
+
+  &__item-form {
+    max-width: 270px;
+  }
+
+  &__form {
+    display: flex;
+    margin-top: 35px;
+
+  }
+
+  &__form-input {
+    width: 170px;
+    padding: 12px 15px;
+    @extend %dmsans-400;
+    color: #234969;
+    font-size: 12px;
+    background-color: #fef7f0;
+    border: none;
+
+    &::placeholder {
+      @extend %dmsans-400;
+      color: #234969;
+      font-size: 12px;
+    }
+  }
+
+  &__form-btn {
+    border: none;
+    background-color: $price;
+    @extend %dmsans-400;
+    color: #fff;
+    padding: 11px 15px 13px;
+    cursor: pointer;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__menu-item {
+    margin-right: 10px;
+  }
+
+  &__menu-item + .footer__menu-item::before {
+    content: '|';
+    margin-right: 10px;
+  }
+
+  &__menu-link,
+  &__copy {
+    font-size: 14px;
+    line-height: 32px;
+    @extend %rubik-400;
+    color: $subtext;
+    text-decoration: none;
+  }
+
+  &__menu-fix {
+    margin-right: 0;
+  }
 }
 
 
