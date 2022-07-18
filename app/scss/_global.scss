@@ -1,0 +1,30 @@
+html,
+body{
+  height: 100%;
+}
+
+
+body{
+  color: $default-text;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  flex-grow: 1;
+}
+
+.main_container{
+  max-width: 1770px;
+  padding: 0 30px;
+  margin: 0 auto;
+
+}
+
+.sub_container{
+  max-width: 1170px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
