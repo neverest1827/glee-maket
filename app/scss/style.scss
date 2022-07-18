@@ -1,6 +1,7 @@
 @import "vars";
 @import "fonts";
 @import "reset";
+@import "libs";
 @import "global";
 
 .header {
@@ -242,6 +243,138 @@
 
   &__menu-fix {
     margin-right: 0;
+  }
+}
+
+.header-slider {
+  &__top {
+    background-color: #fcd7b6;
+    padding: 80px 0 50px;
+  }
+
+  &__item-inner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  &__title {
+    font-size: 72px;
+    line-height: 70px;
+    color: $title;
+    @extend %rubik-500;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 30px;
+    color: $main;
+    @extend %rubik-400;
+    margin-bottom: 54px;
+  }
+
+  &__link {
+    font-size: 15px;
+    line-height: 12px;
+    @extend %rubik-500;
+    text-decoration: none;
+    color: #fff;
+    background-color: #a3bbc8;
+    position: relative;
+    padding: 24px 100px 24px 25px;
+
+    &::after {
+      content: url("../images/arrow.svg");
+      position: absolute;
+      transform: translateY(50%);
+      margin-left: 55px;
+
+    }
+  }
+
+  &__images {
+    padding: 200px 130px 200px 0;
+    background-image: url(../images/ellipse.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin-right: 10px;
+
+      button {
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+
+      &.slick-active {
+        background-color: #fff;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__bottom{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fef7f0;
+  }
+  &__bottom-item{
+    padding: 35px 0 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    &+&{
+      border-left: 1px solid #e8e4df;
+    }
+  }
+  &__bottom-image{
+    padding-top: 12px;
+    width: 50px;
+    position: relative;
+    margin-right: 30px;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: rgba(163, 187, 200, 0.34);
+      border-radius: 50%;
+      right: -4px;
+      bottom: -8px;
+    }
+  }
+  &__bottom-align{
+    align-self: center;
+  }
+
+  &__bottom-content{
+    max-width: 214px;
+  }
+  &__bottom-title{
+    font-size: 18px;
+    line-height: 40px;
+    @extend %dmsans-700;
+    color: $subtitle;
+  }
+  &__bottom-text{
+    font-size: 16px;
+    line-height: 30px;
+    @extend %dmsans-400;
+    color: $subtext;
   }
 }
 

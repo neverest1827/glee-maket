@@ -35,6 +35,7 @@ function styles() {
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
+        'node_modules/slick-carousel/slick/slick.js',
         'app/js/main.js'
     ])
         .pipe(concat('main.min.js'))
@@ -78,7 +79,7 @@ function watching() {
 }
 
 exports.styles = styles;
-exports.scripts = styles;
+exports.scripts = scripts;
 exports.browsersync = browsersync;
 exports.watching = watching;
 exports.images = images;
