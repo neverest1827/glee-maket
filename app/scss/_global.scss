@@ -28,3 +28,10 @@ main{
   padding: 0 30px;
   margin: 0 auto;
 }
+
+.title{
+  text-align: center;
+  font-size: 36px;
+  line-height: 56px;
+  @extend %dmsans-700;
+}

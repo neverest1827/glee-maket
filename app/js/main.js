@@ -7,4 +7,5 @@ $(function (){
         autoplaySpeed: 2000
     });
 
+    mixitup('.product__inner');
 });

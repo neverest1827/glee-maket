@@ -326,27 +326,31 @@
     }
   }
 
-  &__bottom{
+  &__bottom {
     display: flex;
     justify-content: space-around;
     background-color: #fef7f0;
   }
-  &__bottom-item{
+
+  &__bottom-item {
     padding: 35px 0 35px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    &+&{
+
+    & + & {
       border-left: 1px solid #e8e4df;
     }
   }
-  &__bottom-image{
+
+  &__bottom-image {
     padding-top: 12px;
     width: 50px;
     position: relative;
     margin-right: 30px;
-    &::after{
+
+    &::after {
       content: '';
       position: absolute;
       width: 20px;
@@ -357,25 +361,130 @@
       bottom: -8px;
     }
   }
-  &__bottom-align{
+
+  &__bottom-align {
     align-self: center;
   }
 
-  &__bottom-content{
+  &__bottom-content {
     max-width: 214px;
   }
-  &__bottom-title{
+
+  &__bottom-title {
     font-size: 18px;
     line-height: 40px;
     @extend %dmsans-700;
     color: $subtitle;
   }
-  &__bottom-text{
+
+  &__bottom-text {
     font-size: 16px;
     line-height: 30px;
     @extend %dmsans-400;
     color: $subtext;
   }
+}
+
+.product {
+  padding: 55px 0 85px;
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+
+    &-btn {
+      border: none;
+      background-color: inherit;
+      color: #8b8b8b;
+      font-size: 16px;
+      margin: 30px 0 80px;
+      @extend %dmsans-700;
+      cursor: pointer;
+
+      & + & {
+        margin-left: 25px;
+      }
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+  }
+
+  &__item {
+    padding: 30px 0 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
+  }
+
+  &__item-inner {
+    position: relative;
+    margin-bottom: 60px;
+  }
+
+  &__item-links {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  &__item:hover &__item-links {
+    opacity: 1;
+  }
+
+  &__item-icon {
+    fill: $price;
+    transition: all 0.3s;
+  }
+
+  &__item-link:hover &__item-icon {
+    fill: #ffffff;
+  }
+
+  &__item-link {
+    background-color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
+
+    &:hover {
+      background-color: $price;
+    }
+  }
+
+  &__item-title,
+  &__item-price {
+    @extend %dmsans-500;
+    font-size: 16px;
+    line-height: 40px;
+    color: $title;
+  }
+
+  &__item-price {
+    @extend %dmsans-700;
+    color: $price;
+  }
+}
+
+.mixitup-control-active {
+  color: #000;
 }
 
 
