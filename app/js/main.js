@@ -1,4 +1,4 @@
-$(function (){
+$(function () {
     $(".header-slider__top").slick({
         dots: true,
         arrows: false,
@@ -7,5 +7,14 @@ $(function (){
         autoplaySpeed: 2000
     });
 
-    mixitup('.product__inner');
+    mixitup('.product__inner', {
+        controls: {
+            scope: 'local'
+        }
+    });
+    mixitup('.design__inner', {
+        controls: {
+            scope: 'local'
+        }
+    });
 });
