@@ -435,7 +435,7 @@
     left: 0;
     right: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     opacity: 0;
     transition: all 0.3s;
   }
@@ -487,5 +487,62 @@
   color: #000;
 }
 
+.lamp{
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 490px;
+    width: 100%;
+    max-width: 870px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    &:last-child{
+    margin-left: 30px;
+    }
+  }
+  &__item-content{
+    margin: 100px 50px 0 0;
+    max-width: 330px;
+  }
+  &__item-title{
+    @extend %dmsans-700;
+    color: $title;
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  &__item-text{
+    font-size: 16px;
+    line-height: 30px;
+    @extend %rubik-400;
+    color: $title;
+    margin-bottom: 35px;
+  }
+  &__item-link{
+    padding: 20px 85px 20px 20px;
+    position: relative;
+    text-decoration: none;
+    @extend %rubik-500;
+    color: $title;
+    font-size: 15px;
+    border: 1px solid #436372;
+    border-radius: 5px;
+
+    &::after{
+      content: url("../images/arrow-grey.svg") ;
+      position: absolute;
+      margin-left: 43px;
+      top: 17px;
+      right: 20px;
+    }
+  }
+}
 
 @import "media";
