@@ -487,13 +487,13 @@
   color: #000;
 }
 
-.lamp{
-  &__inner{
+.lamp {
+  &__inner {
     display: flex;
     justify-content: space-between;
   }
 
-  &__item{
+  &__item {
     display: flex;
     justify-content: end;
     align-items: center;
@@ -503,29 +503,34 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
-    &:last-child{
-    margin-left: 30px;
+
+    &:last-child {
+      margin-left: 30px;
     }
   }
-  &__item-content{
+
+  &__item-content {
     margin: 100px 50px 0 0;
     max-width: 330px;
   }
-  &__item-title{
+
+  &__item-title {
     @extend %dmsans-700;
     color: $title;
     font-size: 26px;
     line-height: 32px;
     margin-bottom: 20px;
   }
-  &__item-text{
+
+  &__item-text {
     font-size: 16px;
     line-height: 30px;
     @extend %rubik-400;
     color: $title;
     margin-bottom: 35px;
   }
-  &__item-link{
+
+  &__item-link {
     padding: 20px 85px 20px 20px;
     position: relative;
     text-decoration: none;
@@ -535,8 +540,8 @@
     border: 1px solid #436372;
     border-radius: 5px;
 
-    &::after{
-      content: url("../images/arrow-grey.svg") ;
+    &::after {
+      content: url("../images/arrow-grey.svg");
       position: absolute;
       margin-left: 43px;
       top: 17px;
@@ -545,31 +550,47 @@
   }
 }
 
-.design{
-  &__items{
+.design {
+  &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 35px 30px ;
+    grid-gap: 35px 30px;
   }
-  &__item{
+
+  &__item {
     height: 246px;
     padding-top: 37px;
     padding-left: 37px;
   }
-  &__item-title{
+
+  &__item-title {
     @extend %dmsans-700;
     color: #191919;
     font-size: 20px;
     max-width: 175px;
     margin-bottom: 18px;
   }
-  &__item-subtitle{
+
+  &__item-subtitle {
     @extend %dmsans-700;
     font-size: 16px;
     color: $price;
   }
 }
 
+.popup {
+  &__inner {
+    background-image: url(../images/popup-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
 
 
 @import "media";
