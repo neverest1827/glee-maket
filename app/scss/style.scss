@@ -551,6 +551,7 @@
 }
 
 .design {
+  padding: 100px 0 120px;
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -589,8 +590,103 @@
     justify-content: center;
     align-items: center;
   }
+  &__img{
+    transition: all .5s;
+    &:hover{
+      transform: rotate(360deg) scale(1.2);
+    }
+  }
 
 }
+.insights{
+  background-image: linear-gradient(to top, #fef7f0 51%, #fff 49%);
+  &__inner-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 115px 0 45px;
 
+  }
+  &__link{
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: #262626;
+    padding-right: 25px;
+    text-decoration: none;
+    position: relative;
+    &::after{
+      content: url("../images/shape.png");
+      position: absolute;
+      width: 7px;
+      height: 12px;
+      right: 0;
+      top: 0;
+    }
+  }
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  &__item{
+    max-width: 370px;
+    border-radius: 5px;
+    box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
+    position: relative;
+    background-color: #fff;
+  }
+  &__item-images{
+    position: relative;
+    margin-bottom: 19px;
+  }
+  &__news::before{
+    content: "NEWS";
+    position: absolute;
+    color: #fff;
+    background-color: $price;
+    @extend %poppins-700;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 7px 30px;
+    border-radius: 16px;
+    bottom: -17px;
+    left: 28px;
+  }
+  &__item-text{
+    max-width: 317px;
+    margin: 0 auto;
+    padding: 18px 26px 18px 4px;
+    @extend %dmsans-500;
+    font-size: 18px;
+    color: #262626;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  &__item-bottom{
+    max-width: 317px;
+    padding: 20px 0 26px 4px;
+    margin: 0 auto;
+  }
+  &__bottom-link{
+    padding-left: 13px;
+    position: relative;
+    @extend %rubik-400;
+    color: #222933;
+    font-size: 12px;
+    margin-right: 35px;
+    text-decoration: none;
+    &::before{
+      content: url("../images/icon-i.png");
+      position: absolute;
+      left: 0;
+      top: -5px;
+    }
+  }
+  &__partners{
+    padding: 90px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 @import "media";
