@@ -1839,7 +1839,8 @@
   &__items {
     display: flex;
     justify-content: space-between;
-    .getInTouch__item{
+
+    .getInTouch__item {
       padding: 70px;
     }
   }
@@ -1853,7 +1854,8 @@
     width: 100%;
     border: 3px solid #fbfbfb;
     transition: all .3s;
-    &+&{
+
+    & + & {
       margin-left: 26px;
     }
 
@@ -1897,7 +1899,8 @@
     line-height: 30px;
     text-align: center;
   }
-  &__item-link{
+
+  &__item-link {
     @extend %rubik-400;
     font-size: 16px;
     color: #565872;
@@ -1908,25 +1911,59 @@
   }
 }
 
-.geoAndForm{
+.geoAndForm {
   padding-top: 60px;
-  &__inner{
+
+  &__inner {
     display: flex;
     justify-content: space-between;
   }
 }
-.comments-form.geoAndForm__form{
+
+.comments-form.geoAndForm__form {
   padding-top: 0;
   max-width: 620px;
   width: 100%;
-  .comments-form__label--textarea{
-    &:before{
+
+  .comments-form__label--textarea {
+    &:before {
       top: -182px;
     }
   }
-  textarea{
+
+  textarea {
     height: 175px;
 
+  }
+}
+
+.terms {
+  @extend %rubik-400;
+  font-size: 16px;
+  color: $title;
+  padding-top: 115px;
+  &-title{
+    font-size: 24px;
+    @extend %rubik-500;
+    margin-bottom: 25px;
+  }
+  & .terms__list {
+    padding-left: 35px;
+  }
+  &__list-item{
+    padding-bottom: 25px;
+    list-style-type: decimal-leading-zero;
+    padding-left: 10px;
+    &::marker{
+
+    }
+  }
+  &__text,
+  &__list{
+    margin-bottom: 65px;
+  }
+  &__text-noMargin{
+    margin-bottom: 0;
   }
 }
 
