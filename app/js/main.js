@@ -1,4 +1,9 @@
 $(function () {
+    $('.user-nav__btn').click(function (){
+        $('.user-nav__btn').toggleClass('user-nav__btn--active')
+        $('.menu').toggleClass('menu--active')
+    });
+
     $('.related__slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -6,7 +11,7 @@ $(function () {
         appendArrows: $('.related__control'),
         prevArrow: '<button type="button" class="slick-prev"><img src="../images/arrow-grey.svg" alt=""></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="../images/arrow-grey.svg" alt=""></button>',
-    })
+    });
 
     $('.tabs__top-link').click(function (e) {
         e.preventDefault();

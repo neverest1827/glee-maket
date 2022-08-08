@@ -175,6 +175,9 @@
   &__item-link {
     color: $subtext;
     text-decoration: none;
+    span{
+      display: block;
+    }
   }
 
   &__item-form {
