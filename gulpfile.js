@@ -71,6 +71,7 @@ function bild(){
         'app/css/style.min.css',
         'app/js/main.min.js'
     ], {base:'app'})
+        .pipe(dest('dist'))
 }
 
 function cleanDist(){

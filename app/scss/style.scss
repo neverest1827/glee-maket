@@ -544,7 +544,7 @@
     border-radius: 5px;
 
     &::after {
-      content: url("../images/arrow-grey.svg");
+      content: url('../images/arrow-grey.svg');
       position: absolute;
       margin-left: 43px;
       top: 17px;
@@ -585,7 +585,7 @@
 
 .popup {
   &__inner {
-    background-image: url(../images/popup-bg.jpg);
+    background-image: url('../images/popup-bg.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
