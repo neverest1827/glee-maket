@@ -1,5 +1,11 @@
 $(function () {
-    $('.user-nav__btn').click(function (){
+
+    $('.filters__btn').click(function () {
+        $(this).toggleClass('filters__btn--active')
+        $('.filters').toggleClass('filters--hidden')
+    });
+
+    $('.user-nav__btn').click(function () {
         $('.user-nav__btn').toggleClass('user-nav__btn--active')
         $('.menu').toggleClass('menu--active')
     });
@@ -11,6 +17,27 @@ $(function () {
         appendArrows: $('.related__control'),
         prevArrow: '<button type="button" class="slick-prev"><img src="../images/arrow-grey.svg" alt=""></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="../images/arrow-grey.svg" alt=""></button>',
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 620,
+                settings: {
+                    slidesToShow: 1,
+
+                }
+            },
+        ]
     });
 
     $('.tabs__top-link').click(function (e) {
@@ -31,6 +58,14 @@ $(function () {
         fade: true,
         arrows: false,
         asNavFor: '.product-detalis__slider-bar',
+        responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+                    draggable: true,
+                }
+            },
+        ]
     });
     $('.product-detalis__slider-bar').slick({
         focusOnSelect: true,
