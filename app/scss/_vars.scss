@@ -34,3 +34,11 @@ $footer-title: #1f2044;
   font-family: Rubik-Medium, sans-serif;
   font-weight: 500;
 }
+
+%input-hiden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}

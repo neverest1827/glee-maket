@@ -61,129 +61,167 @@
         </div>
     </div>
 </header>
-
 <main class="main">
-
-    <section class="header-slider">
-        <div class="main_container">
-            <div class="header-slider__top">
-                <div class="header-slider__top-item">
-                    <div class="header-slider__item-inner">
-                        <div class="header-slider__content">
-                            <h2 class="header-slider__title">
-                                SMART AND
-                                TRENDY
-                            </h2>
-                            <div class="header-slider__text">
-                                Dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod tempor incididunt
-                            </div>
-                            <a class="header-slider__link" href="#">
-                                Shop Now
-                            </a>
-                        </div>
-                        <div class="header-slider__images">
-                            <img class="header-slider__image" src="images/sofa.png" alt="slider-image">
-                        </div>
-                    </div>
-                </div>
-                <div class="header-slider__top-item">
-                    <div class="header-slider__item-inner">
-                        <div class="header-slider__content">
-                            <h2 class="header-slider__title">
-                                SMART AND
-                                TRENDY
-                            </h2>
-                            <div class="header-slider__text">
-                                Dolor sit amet, consectetur adipisicing elit, <br> sed do eiusmod tempor incididunt
-                            </div>
-                            <a class="header-slider__link" href="#">
-                                Shop Now
-                            </a>
-                        </div>
-                        <div class="header-slider__images">
-                            <img class="header-slider__image" src="images/sofa.png" alt="slider-image">
-                        </div>
-                    </div>
-                </div>
-                <div class="header-slider__top-item">
-                    <div class="header-slider__item-inner">
-                        <div class="header-slider__content">
-                            <h2 class="header-slider__title">
-                                SMART AND
-                                TRENDY
-                            </h2>
-                            <div class="header-slider__text">
-                                Dolor sit amet, consectetur adipisicing elit, <br> sed do eiusmod tempor incididunt
-                            </div>
-                            <a class="header-slider__link" href="#">
-                                Shop Now
-                            </a>
-                        </div>
-                        <div class="header-slider__images">
-                            <img class="header-slider__image" src="images/sofa.png" alt="slider-image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header-slider__bottom">
-                <div class="header-slider__bottom-item">
-                    <div class="header-slider__bottom-image">
-                        <img class="header-slider__bottom-img" src="images/support.svg" alt="support icon">
-                    </div>
-                    <div class="header-slider__bottom-content">
-                        <h4 class="header-slider__bottom-title">
-                            Support 24/7.
-                        </h4>
-                        <div class="header-slider__bottom-text">
-                            Contact us 24 hours a day,<br>
-                            7 days a week.
-                        </div>
-                    </div>
-                </div>
-                <div class="header-slider__bottom-item header-slider__bottom-align">
-                    <div class="header-slider__bottom-image">
-                        <img class="header-slider__bottom-img" src="images/delivery-truck.svg" alt="truck icon">
-                    </div>
-                    <div class="header-slider__bottom-content">
-                        <h4 class="header-slider__bottom-title">
-                            Delivery.
-                        </h4>
-                        <div class="header-slider__bottom-text">
-                            Free shipping on all US order.
-                        </div>
-                    </div>
-                </div>
-                <div class="header-slider__bottom-item">
-                    <div class="header-slider__bottom-image">
-                        <img class="header-slider__bottom-img" src="images/credit-card.svg" alt="credit-card icon">
-                    </div>
-                    <div class="header-slider__bottom-content">
-                        <h4 class="header-slider__bottom-title">
-                            100% Payment secure.
-                        </h4>
-                        <div class="header-slider__bottom-text">
-                            We ensure secure payment
-                            with PEV.
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="top">
+        <h2 class="title top__title">
+            Product list 1
+        </h2>
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__items">
+                    <a class="breadcrumbs__link" href="#">Home</a>
+                </li>
+                <li class="breadcrumbs__items">
+                    <a class="breadcrumbs__link" href="#">Product list 1</a>
+                </li>
+            </ul>
         </div>
-    </section>
-    <section class="product">
+    </div>
+    <section class="product-list1">
         <div class="sub_container">
-            <div class="product__inner">
-                <h2 class="title">
-                    Products of the week
-                </h2>
-                <div class="product__menu">
-                    <button class="product__menu-btn " type="button" data-filter="all">All</button>
-                    <button class="product__menu-btn" type="button" data-filter=".category-a">Furnitures</button>
-                    <button class="product__menu-btn" type="button" data-filter=".category-b">Chairs</button>
-                    <button class="product__menu-btn" type="button" data-filter=".category-c">Lighting</button>
-                    <button class="product__menu-btn" type="button" data-filter=".category-d">Decor</button>
+            <div class="product-list1__inner">
+                <button class="filters__btn"></button>
+                <div class="filters filters--hidden">
+                    <div class="filters__item category-filters">
+                        <h3 class="filters__title">CATEGORY</h3>
+                        <form action="#" class="filters__form">
+                            <label class="category-filters__label">
+                                <input class="category-filters__input" type="checkbox">
+                                <div class="category-filters__checkbox">Chair</div>
+                            </label>
+                            <label class="category-filters__label">
+                                <input class="category-filters__input" type="checkbox">
+                                <div class="category-filters__checkbox">Table</div>
+                            </label>
+                            <label class="category-filters__label">
+                                <input class="category-filters__input" type="checkbox">
+                                <div class="category-filters__checkbox">Lamp</div>
+                            </label>
+                            <label class="category-filters__label">
+                                <input class="category-filters__input" type="checkbox">
+                                <div class="category-filters__checkbox">Watch</div>
+                            </label>
+                            <label class="category-filters__label">
+                                <input class="category-filters__input" type="checkbox">
+                                <div class="category-filters__checkbox">Clock</div>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="filters__item price-filters">
+                        <h3 class="filters__title">PRICE</h3>
+                        <form action="#" class="filters__form">
+                            <label class="price-filters__label">
+                                <input class="price-filters__input" type="text"
+                                       data-type="double"
+                                       data-min="0"
+                                       data-max="800"
+                                       data-from="200"
+                                       data-to="500">
+                                <div class="price-filters__input-box">
+                                <span class="price-filters__input-span">$<span
+                                        class="price-filters__from"></span>.00</span>
+                                    <span class="price-filters__input-span">$<span
+                                            class="price-filters__to"></span>.00</span>
+                                </div>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="filters__item brand-filters">
+                        <h3 class="filters__title">BRAND</h3>
+                        <form action="#" class="filters__form">
+                            <label class="brand-filters__label">
+                                <input class="brand-filters__input" type="checkbox">
+                                <div class="brand-filters__checkbox">
+                                    <span class="brand-filters__checkbox-text">RFL</span>
+                                    <span class="brand-filters__checkbox-num">(10)</span>
+                                </div>
+                            </label>
+                            <label class="brand-filters__label">
+                                <input class="brand-filters__input" type="checkbox">
+                                <div class="brand-filters__checkbox">
+                                    <span class="brand-filters__checkbox-text">Brothers</span>
+                                    <span class="brand-filters__checkbox-num">(21)</span>
+                                </div>
+                            </label>
+                            <label class="category-filters__label">
+                                <input class="brand-filters__input" type="checkbox">
+                                <div class="brand-filters__checkbox">
+                                    <span class="brand-filters__checkbox-text">Regal</span>
+                                    <span class="brand-filters__checkbox-num">(3)</span>
+                                </div>
+                            </label>
+                            <label class="brand-filters__label">
+                                <input class="brand-filters__input" type="checkbox">
+                                <div class="brand-filters__checkbox">
+                                    <span class="brand-filters__checkbox-text">Nadia</span>
+                                    <span class="brand-filters__checkbox-num">(14)</span>
+                                </div>
+                            </label>
+                            <label class="brand-filters__label">
+                                <input class="brand-filters__input" type="checkbox">
+                                <div class="brand-filters__checkbox">
+                                    <span class="brand-filters__checkbox-text">Otobi</span>
+                                    <span class="brand-filters__checkbox-num">(6)</span>
+                                </div>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="recent">
+                        <h3 class="filters__title">RECENT PRODUCTS</h3>
+                        <div class="recent__items">
+                            <div class="recent-item">
+                                <a href="" class="recent-item__link">
+                                    <img class="recent-item__img" src="images/recent/1.jpg" alt="">
+                                </a>
+                                <div class="recent-item__content">
+                                    <a href="" class="recent-item__link">
+                                        <h5 class="recent-item__content-title">
+                                            Pendant lamp
+                                        </h5>
+                                    </a>
+                                    <div class="star" data-rateyo-rating="4"></div>
+                                    <span class="recent-item__content-price">
+                                    $23
+                                </span>
+                                </div>
+                            </div>
+                            <div class="recent-item">
+                                <a href="" class="recent-item__link">
+                                    <img class="recent-item__img" src="images/recent/1.jpg" alt="">
+                                </a>
+                                <div class="recent-item__content">
+                                    <a href="" class="recent-item__link">
+                                        <h5 class="recent-item__content-title">
+                                            Pendant lamp
+                                        </h5>
+                                    </a>
+                                    <div class="star" data-rateyo-rating="4"></div>
+                                    <span class="recent-item__content-price">
+                                    $23
+                                </span>
+                                </div>
+                            </div>
+                            <div class="recent-item">
+                                <a href="" class="recent-item__link">
+                                    <img class="recent-item__img" src="images/recent/1.jpg" alt="">
+                                </a>
+                                <div class="recent-item__content">
+                                    <a href="" class="recent-item__link">
+                                        <h5 class="recent-item__content-title">
+                                            Pendant lamp
+                                        </h5>
+                                    </a>
+                                    <div class="star" data-rateyo-rating="4"></div>
+                                    <span class="recent-item__content-price">
+                                    $23
+                                </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="product__items">
+                <div class="product__items product__wrapper">
                     <div class="product__item mix category-a">
                         <div class="product__item-inner">
                             <img class="product__item-img" src="images/product/1.png" alt="">
@@ -488,193 +526,37 @@
                     </div>
                 </div>
             </div>
+            <div class="pagination">
+                <ul class="pagination__list">
+                    <li class="pagination__list-item">
+                        <a class="pagination__list-link pagination__list-link--active" href="#" >1</a>
+                    </li>
+                    <li class="pagination__list-item">
+                        <a class="pagination__list-link" href="#" >2</a>
+                    </li>
+                    <li class="pagination__list-item">
+                        <a class="pagination__list-link" href="#" >3</a>
+                    </li>
+                    <li class="pagination__list-item">
+                        <a class="pagination__list-link" href="#" >Next</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </section>
 
-    <div class="lamp">
-        <div class="main_container">
-            <div class="lamp__inner">
-                <div class="lamp__item" style="background-image:url(images/lamp.jpg);">
-                    <div class="lamp__item-content">
-                        <h4 class="lamp__item-title">
-                            Mirum Notare Tellus
-                        </h4>
-                        <p class="lamp__item-text">
-                            LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
-                        </p>
-                        <a class="lamp__item-link" href="#">
-                            View More
-                        </a>
-                    </div>
-                </div>
-                <div class="lamp__item" style="background-image:url(images/bra.jpg);">
-                    <div class="lamp__item-content">
-                        <h4 class="lamp__item-title">
-                            Mirum Notare Tellus
-                        </h4>
-                        <p class="lamp__item-text">
-                            LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
-                        </p>
-                        <a class="lamp__item-link" href="#">
-                            View More
-                        </a>
-                    </div>
-                </div>
+    <div class="partners__bg">
+        <div class="sub_container">
+            <div class="partners partners__around">
+                <img class="insights__partners-img" src="images/partners/1.png" alt="">
+                <img class="insights__partners-img" src="images/partners/2.png" alt="">
+                <img class="insights__partners-img" src="images/partners/3.png" alt="">
+                <img class="insights__partners-img" src="images/partners/4.png" alt="">
+                <img class="insights__partners-img" src="images/partners/5.png" alt="">
             </div>
         </div>
     </div>
-
-    <section class="design">
-        <div class="sub_container">
-            <div class="design__inner">
-                <h3 class="title">
-                    New Design
-                </h3>
-                <div class="product__menu">
-                    <button class="product__menu-btn " type="button" data-filter="all">All</button>
-                    <button class="product__menu-btn" type="button" data-filter=".category-e">Furnitures</button>
-                    <button class="product__menu-btn" type="button" data-filter=".category-f">Chairs</button>
-                    <button class="product__menu-btn" type="button" data-filter=".category-g">Lighting</button>
-                    <button class="product__menu-btn" type="button" data-filter=".category-h">Decor</button>
-                </div>
-                <div class="design__items">
-                    <div class="design__item mix category-e" style="background-image: url(images/design/1.jpg);">
-                        <h5 class="design__item-title">
-                            Beat Flat Pendant
-                            Black
-                        </h5>
-                        <p class="design__item-subtitle">
-                            Classic
-                        </p>
-                    </div>
-                    <div class="design__item mix category-f" style="background-image: url(images/design/2.jpg);">
-                        <h5 class="design__item-title">
-                            Lampe Sur Pieds
-                            Bamboo
-                        </h5>
-                        <p class="design__item-subtitle">
-                            Classic
-                        </p>
-                    </div>
-                    <div class="design__item mix category-g" style="background-image: url(images/design/3.jpg);">
-                        <h5 class="design__item-title">
-                            Rattan Rocking
-                            Chair
-                        </h5>
-                        <p class="design__item-subtitle">
-                            Classic
-                        </p>
-                    </div>
-                    <div class="design__item mix category-h" style="background-image: url(images/design/4.jpg);">
-                        <h5 class="design__item-title">
-                            Rattan Rocking
-                            Chair
-                        </h5>
-                        <p class="design__item-subtitle">
-                            Classic
-                        </p>
-                    </div>
-                    <div class="design__item mix category-h" style="background-image: url(images/design/5.jpg);">
-                        <h5 class="design__item-title">
-                            Rattan Rocking
-                            Chair
-                        </h5>
-                        <p class="design__item-subtitle">
-                            Classic
-                        </p>
-                    </div>
-                    <div class="design__item mix category-f" style="background-image: url(images/design/6.jpg);">
-                        <h5 class="design__item-title">
-                            Lampe Sur Pieds
-                            Bamboo
-                        </h5>
-                        <p class="design__item-subtitle">
-                            Classic
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="popup">
-        <div class="popup__inner">
-            <a class="popup__link" data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=QpGU-uYegoU">
-                <img class="popup__img" src="images/play-icon.png" alt="play">
-            </a>
-        </div>
-    </div>
-
-    <section class="insights">
-        <div class="sub_container">
-            <div class="insights__inner">
-                <div class="insights__inner-top">
-                    <h2 class="title insights__title">
-                        Our Insights & Articles
-                    </h2>
-                    <a class="insights__link" href="#">
-                        View All
-                    </a>
-                </div>
-                <div class="insights__items">
-                    <ul class="insights__item">
-                        <li class="insights__item-images ">
-                            <a class="insights__item-link insights__news" href="#">
-                                <img class="insights__item-img" src="images/insights/1.jpg" alt="">
-                            </a>
-                        </li>
-                        <li class="insights__item-inner">
-                            <p class="insights__item-text">
-                                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                            </p>
-                        </li>
-                        <li class="insights__item-bottom">
-                            <a class="insights__bottom-link" href="#">28 JANUARY, 2020</a>
-                            <a class="insights__bottom-link" href="#">BY ADMIN</a>
-                        </li>
-                    </ul>
-                    <ul class="insights__item">
-                        <li class="insights__item-images ">
-                            <a class="insights__item-link insights__news" href="#">
-                                <img class="insights__item-img" src="images/insights/2.jpg" alt="">
-                            </a>
-                        </li>
-                        <li class="insights__item-inner">
-                            <p class="insights__item-text">
-                                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                            </p>
-                        </li>
-                        <li class="insights__item-bottom">
-                            <a class="insights__bottom-link" href="#">28 JANUARY, 2020</a>
-                            <a class="insights__bottom-link" href="#">BY ADMIN</a>
-                        </li>
-                    </ul>
-                    <ul class="insights__item">
-                        <li class="insights__item-images ">
-                            <a class="insights__item-link insights__news" href="#">
-                                <img class="insights__item-img" src="images/insights/3.jpg" alt="">
-                            </a>
-                        </li>
-                        <li class="insights__item-inner">
-                            <p class="insights__item-text">
-                                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                            </p>
-                        </li>
-                        <li class="insights__item-bottom">
-                            <a class="insights__bottom-link" href="#">28 JANUARY, 2020</a>
-                            <a class="insights__bottom-link" href="#">BY ADMIN</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="partners">
-                    <img class="insights__partners-img" src="images/partners/1.png" alt="">
-                    <img class="insights__partners-img" src="images/partners/2.png" alt="">
-                    <img class="insights__partners-img" src="images/partners/3.png" alt="">
-                    <img class="insights__partners-img" src="images/partners/4.png" alt="">
-                    <img class="insights__partners-img" src="images/partners/5.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
 </main>
 <footer class="footer">
     <div class="sub_container">
@@ -688,7 +570,7 @@
                     </li>
                     <li class="footer__item-content">
                         <a class="footer__item-link" href="#">ADDRESS: 4772 Wines Lane
-                            <span>Houston, TX 77032</span></a>
+                            Houston, TX 77032</a>
                     </li>
                     <li class="footer__item-content">
                         <a class="footer__item-link" href="tel:+832-347-5843">Telephone: +832-347-5843</a>
@@ -744,9 +626,7 @@
                     </li>
                     <li class="footer__item-content">
                         <form class="footer__form" action="#">
-                            <label class="footer__form-label">
-                                <input class="footer__form-input" type="text" placeholder="Email address">
-                            </label>
+                            <input class="footer__form-input" type="text" placeholder="Email address">
                             <button class="footer__form-btn">Subscribe</button>
                         </form>
                     </li>
@@ -772,7 +652,6 @@
         </div>
     </div>
 </footer>
-
 <script src="js/main.min.js"></script>
 </body>
 </html>
